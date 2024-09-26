@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Literata, Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: 1fr minmax(80vh, 100%) 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 1rem;
+  border-bottom: 1px solid #3092e2;
+}
+
+header {
+  grid-area: header;
+  background: #073077;
+  border-bottom: 4px solid #3092e2;
+}
+
+main {
+  grid-area: main;
+  margin: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background: #073077;
+  border-top: 4px solid #3092e2;
+}

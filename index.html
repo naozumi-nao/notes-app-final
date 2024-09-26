@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <header>
+      <app-bar appname="Notes App" appicon="src/image/note-icon.svg"></app-bar>
+    </header>
+
+    <main>
+      <add-note></add-note>
+      <h2 class="heading">Notes List</h2>
+      <div class="notes-list-container">
+        <loading-anim id="notes-loading"></loading-anim>
+        <notes-list id="unarchived-notes"></notes-list>
+      </div>
+      <h2 class="heading">Archived Notes List</h2>
+      <div class="archived-notes-list-container">
+        <loading-anim id="archived-loading"></loading-anim>
+        <notes-list id="archived-notes"></notes-list>
+      </div>
+    </main>
+
+    <footer>
+      <footer-bar
+        courseurl="https://www.dicoding.com/academies/163"
+        coursename="Belajar Fundamental Front-End Web"
+      ></footer-bar>
+    </footer>
+  </body>
+</html>
